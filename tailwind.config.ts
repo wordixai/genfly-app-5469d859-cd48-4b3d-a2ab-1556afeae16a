@@ -61,6 +61,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				neural: {
+					50: 'hsl(210, 100%, 98%)',
+					100: 'hsl(210, 100%, 95%)',
+					200: 'hsl(210, 100%, 90%)',
+					300: 'hsl(210, 100%, 80%)',
+					400: 'hsl(210, 100%, 70%)',
+					500: 'hsl(210, 100%, 60%)',
+					600: 'hsl(210, 100%, 50%)',
+					700: 'hsl(210, 100%, 40%)',
+					800: 'hsl(210, 100%, 30%)',
+					900: 'hsl(210, 100%, 20%)',
+				},
+				creative: {
+					50: 'hsl(270, 100%, 98%)',
+					100: 'hsl(270, 100%, 95%)',
+					200: 'hsl(270, 100%, 90%)',
+					300: 'hsl(270, 100%, 80%)',
+					400: 'hsl(270, 100%, 70%)',
+					500: 'hsl(270, 100%, 60%)',
+					600: 'hsl(270, 100%, 50%)',
+					700: 'hsl(270, 100%, 40%)',
+					800: 'hsl(270, 100%, 30%)',
+					900: 'hsl(270, 100%, 20%)',
 				}
 			},
 			borderRadius: {
@@ -84,11 +108,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { opacity: '0.5' },
+					'50%': { opacity: '1' }
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '0.3' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-neural': 'linear-gradient(135deg, hsl(210, 100%, 60%) 0%, hsl(270, 100%, 60%) 100%)',
+				'gradient-creative': 'linear-gradient(135deg, hsl(270, 100%, 60%) 0%, hsl(320, 100%, 60%) 100%)',
+				'gradient-mesh': 'radial-gradient(circle at 25% 25%, hsl(210, 100%, 60%) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(270, 100%, 60%) 0%, transparent 50%)'
 			}
 		}
 	},
